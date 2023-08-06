@@ -47,3 +47,8 @@
     text-align: left;
     font-family: Helvetica;
   }
+  
+  .default-card-content{
+    text-align: center;
+    font-family: Helvetica;
+  }

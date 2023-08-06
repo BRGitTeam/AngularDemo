@@ -42,6 +42,5 @@ export class WeatherViewComponent{
     this.searchText = ''; //Setting input field back to original state.
 
 
-  
   }
 }

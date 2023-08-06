@@ -1,3 +1,49 @@
 .weather-view-container{
-    margin: 5rem;
+    /* width: auto; */
+    position: relative;
 }
+
+.weather-view-background{
+    background-color: #808080;
+    text-align: center;
+    border: 0;
+    height: 90vh;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.form {
+    padding-top: 7.5rem;
+    padding-right: 20rem;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .full-width {
+    width: 50%;
+    padding-right: 10rem;
+  }
+
+  .search-hint{
+    padding-right: 15rem;
+  }
+  .weather-card {
+    max-width: 400px;
+    height: 400px;
+    max-height: 600px;
+  }
+  
+  .weather-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .card-container{
+    margin-left: 40vw;
+  }
+
+  .card-content{
+    text-align: left;
+    font-family: Helvetica;
+  }

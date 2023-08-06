@@ -1,7 +1,7 @@
 .page-container {
     margin: 0;
     position: relative;
-    min-height: 100vh;
-    min-width: 100vw;
+    min-height: auto;
+    min-width: auto;
   }
   

@@ -1,4 +1,39 @@
 <div class="weather-view-container">
-    <p>weather-view works!</p>
+    <div class="weather-view-background">
+        <div class="form-container">
+            <form class="form" (submit)="onCitySubmit()">
+                <mat-hint class="search-hint">Find the current weather:</mat-hint>
+                <mat-form-field class="full-width">
+                <mat-label>Enter a city </mat-label>
+                <input matInput placeholder="Ex. Baton Rouge" type="text" [(ngModel)]="searchText" name="searchText">
+                </mat-form-field>
+            </form>
+        </div>
+      
+        <div class="card-container">
+            <mat-card class="weather-card">
+                <mat-card-header>
+                    <mat-card-title *ngIf="showTemp">Current Weather:</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <div *ngIf="showTemp" class="card-content">
+                        <span>
+                            Currently in {{city}},{{state}} the weather condition is {{weatherCondition}}.
+                            <br/>
+                             The Current Tempature is: {{currentTemp}}.
+                            <br/>
+                            Time Zone: {{timeZone}}.
+                        </span>
+                    </div>
+                    <p *ngIf="!showTemp" class="card-content">
+                        Waiting for city to be searched.
+                    </p>
+                </mat-card-content>
+                <img mat-card-image src={{img}}>
+              
+            </mat-card>
+        </div>
+   
+    </div>
 </div>
 

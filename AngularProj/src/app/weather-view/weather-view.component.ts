@@ -23,7 +23,7 @@ export class WeatherViewComponent{
     console.log(this.searchText)
     let url = 'https://api.weatherapi.com/v1/current.json'
     let API_KEY = '8eb1ea8eac8b4bbfb51223921230508'
- 
+
     try{
       this.showTemp = true;
       let jsonData = await fetch(url +'?key=' + API_KEY + '&q=' + this.searchText)
@@ -37,6 +37,7 @@ export class WeatherViewComponent{
     }catch(e){
       throw e;
       console.log(e)
+      // this change
     }
 
     this.searchText = ''; //Setting input field back to original state.

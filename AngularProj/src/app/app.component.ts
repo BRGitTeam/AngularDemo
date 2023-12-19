@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { WeatherViewComponent } from './weather-view/weather-view.component';
+import { TestCompoment } from './testcomponent/test.component';
 
 @Component({
   selector: 'app-root',
@@ -17,4 +18,5 @@ export class AppComponent implements OnInit {
   @ViewChild(NavbarComponent) navbarChild: NavbarComponent | undefined;
   @ViewChild(WeatherViewComponent) weatherViewChild: WeatherViewComponent | undefined;
   @ViewChild(FooterComponent) footChild: FooterComponent | undefined;
+  @ViewChild(TestCompoment) testChild: TestCompoment | undefined;
 }

@@ -13,13 +13,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { WeatherViewComponent } from './weather-view/weather-view.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TestCompoment } from './testcomponent/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    WeatherViewComponent
+    WeatherViewComponent, 
+    TestCompoment
   ],
   imports: [
     BrowserModule,
